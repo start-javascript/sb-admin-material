@@ -1,4 +1,6 @@
-# NgMaterial
+# SB Admin Material
+
+## [Demo](http://rawgit.com/start-javascript/sb-admin-material/master/dist/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
