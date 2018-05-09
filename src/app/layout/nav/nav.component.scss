@@ -1,0 +1,22 @@
+.sidenav-container {
+    height: 100%;
+}
+
+.sidenav {
+    width: 250px;
+    box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24);
+}
+.topnav-icon {
+    text-decoration: none;
+    display: flex;
+    color: #fff;
+}
+
+.sidenav-icon {
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.nav-spacer {
+    flex: 1 1 auto;
+}
