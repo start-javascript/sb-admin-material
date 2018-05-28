@@ -1,7 +1,7 @@
 <mat-sidenav-container class="sidenav-container">
     <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [attr.role]="isHandset ? 'dialog' : 'navigation'" [mode]="(isHandset | async)!.matches ? 'over' : 'side'"
         [opened]="!(isHandset | async)!.matches">
-        <mat-toolbar color="primary">Application</mat-toolbar>
+        <mat-toolbar color="primary">SB Admin Marerial</mat-toolbar>
         <mat-nav-list>
             <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/dashboard']">
                 <mat-icon class="sidenav-icon">dashboard</mat-icon> Dashbard

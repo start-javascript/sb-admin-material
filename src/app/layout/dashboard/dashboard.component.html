@@ -1,3 +1,14 @@
-<p>
-  dashboard works!
-</p>
+<mat-grid-list cols="4" rowHeight="2:1" [gutterSize]="'20px'">
+    <mat-grid-tile>
+        <app-stat [bgClass]="'danger'" [icon]="'dashboard'" [count]="13" [label]="'New Tickets!'"></app-stat>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <app-stat [bgClass]="'warning'" [icon]="'view_list'" [count]="12" [label]="'New task!'" ></app-stat>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <app-stat [bgClass]="'success'" [icon]="'shopping_cart'" [count]="124" [label]="'New Orders!'" ></app-stat>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <app-stat [bgClass]="'danger'" [icon]="'contact_support'" [count]="13" [label]="'New Tickets!'"></app-stat>
+    </mat-grid-tile>
+</mat-grid-list>

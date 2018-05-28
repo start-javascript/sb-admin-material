@@ -1,0 +1,26 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Auto Complete</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form>
+            <mat-form-field>
+                <input matInput placeholder="State" aria-label="State" [matAutocomplete]="auto" [formControl]="stateCtrl" />
+                <mat-autocomplete #auto="matAutocomplete">
+                    <mat-option *ngFor="let state of filteredStates | async" [value]="state.name">
+                        <img style="vertical-align:middle;" aria-hidden src="{{state.flag}}" height="25" />
+                        <span>{{ state.name }}</span> |
+                        <small>Population: {{state.population}}</small>
+                    </mat-option>
+                </mat-autocomplete>
+            </mat-form-field>
+            <br />
+            <mat-slide-toggle
+                [checked]="stateCtrl.disabled"
+                (change)="stateCtrl.disabled ? stateCtrl.enable() : stateCtrl.disable()"
+            >
+                Disable Input?
+            </mat-slide-toggle>
+        </form>
+    </mat-card-content>
+</mat-card>

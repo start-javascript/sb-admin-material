@@ -9,6 +9,10 @@ const routes: Routes = [
         component: LayoutComponent,
         children: [
             {
+                path: '',
+                redirectTo: 'dashboard'
+            },
+            {
                 path: 'dashboard',
                 loadChildren: './dashboard/dashboard.module#DashboardModule'
             },
