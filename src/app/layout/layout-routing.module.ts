@@ -22,7 +22,8 @@ const routes: Routes = [
             },
             {
                 path: 'components',
-                loadChildren: './components/components.module#ComponentsModule'
+                loadChildren:
+                    './material-components/material-components.module#MaterialComponentsModule'
             },
             {
                 path: 'forms',

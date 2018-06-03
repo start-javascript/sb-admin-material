@@ -1,0 +1,44 @@
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    .content {
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .login-form {
+            padding: 40px;
+            background: #fff;
+            width: 500px;
+            box-shadow: 0 0 10px #ddd;
+            input:-webkit-autofill {
+                -webkit-box-shadow: 0 0 0 30px white inset;
+            }
+        }
+    }
+
+    &:after {
+        content: '';
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 50%;
+        right: 0;
+    }
+    &:before {
+        content: '';
+        background: #3f51b5;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.w-100 {
+    width: 100%;
+}

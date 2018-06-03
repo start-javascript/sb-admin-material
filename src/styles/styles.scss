@@ -1,13 +1,3 @@
-html,
-body {
-    margin: 0;
-}
-
-.main-container {
-    margin-left: 250px;
-    padding: 20px;
-}
-
 @font-face {
     font-family: 'Fontil Sans';
     src: url('../assets/fonts/FontinSans/Fontin_Sans_R.otf') format('opentype');
@@ -22,3 +12,19 @@ $custom-typography: mat-typography-config(
     $body-1: mat-typography-level(16px, 24px, 500)
 );
 @include angular-material-typography($custom-typography);
+
+html,
+body {
+    // height: 100%;
+    margin: 0;
+    font-family: 'Fontil Sans';
+}
+
+.main-container {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}

@@ -1,6 +1,47 @@
+@import '~@angular/material/theming';
+
 .icon-lg {
-    font-size: 42px;
+    font-size: 40px;
 }
-.card {
+
+.mat-card-header-text {
     width: 100%;
+    text-align: right;
+}
+
+.mat-card {
+    color: #fff;
+    .mat-card-header {
+        width: 100%;
+    }
+    .mat-card-title {
+        font-size: 40px !important;
+    }
+    .mat-card-subtitle {
+        color: #fff;
+    }
+
+    .mat-card-actions {
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            color: #fff;
+        }
+    }
+}
+
+.mat-card.danger {
+    background: linear-gradient(60deg, #ec407a, #d81b60);
+}
+
+.mat-card.warn {
+    background: linear-gradient(60deg, #ffa726, #fb8c00);
+}
+
+.mat-card.success {
+    background: linear-gradient(60deg, #66bb6a, #43a047);
+}
+
+.mat-card.info {
+    background: linear-gradient(60deg, #26c6da, #00acc1);
 }
