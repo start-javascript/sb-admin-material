@@ -1,0 +1,51 @@
+<mat-toolbar color="primary" class="fix-nav">
+    <button type="button" mat-icon-button class="visible-md" (click)="toggleSidebar()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+    </button>
+    <div class="nav-brand">
+        SB Admin Material
+    </div>
+    <form class="hidden-sm" style="margin-left: 20px; margin-top: 5px">
+        <mat-form-field>
+            <input matInput [placeholder]="'Search' | translate">
+        </mat-form-field>
+    </form>
+    <span class="nav-spacer"></span>
+    <a href="https://github.com/start-javascript/sb-admin-material/archive/master.zip" class="hidden-sm" mat-raised-button style="margin-right: 10px">
+        <mat-icon>cloud_download</mat-icon> {{ 'Download Now' | translate }}
+    </a>
+    <button class="hidden-sm" mat-icon-button [matMenuTriggerFor]="language">
+        <mat-icon>language</mat-icon>
+    </button>
+    <mat-menu #language="matMenu">
+        <button mat-menu-item (click)="changeLang('en')">
+            <span>{{ 'English' | translate }}</span>
+        </button>
+        <button mat-menu-item (click)="changeLang('fr')">
+            <span>{{ 'French' | translate }}</span>
+        </button>
+        <button mat-menu-item (click)="changeLang('ur')">
+            <span>{{ 'Urdu' | translate }}s</span>
+        </button>
+    </mat-menu>
+    <button class="hidden-sm" mat-icon-button [matMenuTriggerFor]="profile">
+        <mat-icon>account_circle</mat-icon>
+    </button>
+    <mat-menu #profile="matMenu">
+        <button mat-menu-item>
+            <mat-icon>person</mat-icon>
+            <span>{{ 'Profile' | translate }}</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>inbox</mat-icon>
+            <span>{{ 'Inbox' | translate }}</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>settings</mat-icon>
+            <span>{{ 'Settings' | translate }}</span>
+        </button>
+    </mat-menu>
+    <button mat-icon-button (click)="onLoggedout()">
+        <mat-icon>exit_to_app</mat-icon>
+    </button>
+</mat-toolbar>

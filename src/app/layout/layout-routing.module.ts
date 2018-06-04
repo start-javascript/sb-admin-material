@@ -36,6 +36,10 @@ const routes: Routes = [
             {
                 path: 'tables',
                 loadChildren: './tables/tables.module#TablesModule'
+            },
+            {
+                path: 'blank-page',
+                loadChildren: './blank-page/blank-page.module#BlankPageModule'
             }
         ]
     }

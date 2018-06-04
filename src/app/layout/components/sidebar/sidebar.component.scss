@@ -1,0 +1,25 @@
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 56px;
+    bottom: 0;
+    background: #fff;
+    box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24);
+    z-index: 999;
+    -ms-overflow-y: auto;
+    overflow-y: auto;
+    .mat-nav-list {
+        width: 100%;
+        a {
+            .mat-icon {
+                margin-right: 15px;
+            }
+            display: block;
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    #sidebar {
+        left: -250px;
+    }
+}

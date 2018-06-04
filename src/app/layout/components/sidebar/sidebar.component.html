@@ -1,0 +1,28 @@
+<div id="sidebar">
+    <mat-nav-list>
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/dashboard']">
+            <mat-icon class="sidenav-icon">dashboard</mat-icon> {{ 'Dashboard' | translate }}
+        </a>
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/charts']">
+            <mat-icon class="sidenav-icon">bar_chart</mat-icon> {{ 'Charts' | translate }}
+        </a>
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/tables']">
+            <mat-icon class="sidenav-icon">table_chart</mat-icon> {{ 'Tables' | translate }}
+        </a>
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/forms']">
+            <mat-icon class="sidenav-icon">input</mat-icon> {{ 'Forms' | translate }}
+        </a>
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/grid']">
+            <mat-icon class="sidenav-icon">grid_on</mat-icon> {{ 'Material Grid' | translate }}
+        </a>
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/components']">
+            <mat-icon class="sidenav-icon">code</mat-icon> {{ 'Material Component' | translate }}
+        </a>
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/blank-page']">
+            <mat-icon class="sidenav-icon">insert_drive_file</mat-icon> {{ 'Blank Page' | translate }}
+        </a>
+        <a mat-list-item>
+            <mat-icon class="sidenav-icon">add</mat-icon> {{ 'Menu' | translate }}
+        </a>
+    </mat-nav-list>
+</div>

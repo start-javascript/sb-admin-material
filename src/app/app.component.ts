@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-root',
@@ -6,18 +7,7 @@ import { Component } from '@angular/core';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-    title = 'app';
-    promise1: Promise<number>;
-    promise2: Promise<number>;
-
-    emit(promise1: Promise<number>, promise2: Promise<number>) {
-        Promise.all([promise1, promise2]).then(
-            res => {
-                console.log(res);
-            },
-            err => {
-                console.log(err);
-            }
-        );
+    constructor(private translate: TranslateService) {
+        translate.setDefaultLang('en');
     }
 }

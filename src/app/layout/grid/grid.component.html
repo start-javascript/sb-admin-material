@@ -1,17 +1,62 @@
-<div class="mb-20" fxLayout="row" fxLayout.md="column" fxFlex fxLayoutGap="20px grid" layout-margin>
+<div class="mb-20" fxFlex fxLayout="row" fxLayout.lt-md="column">
     <div fxFlex>
         <mat-card fxFlexFill fxLayoutAlign="center center">
-            50%
-        </mat-card>
-    </div>
-    <div fxFlex>
-        <mat-card fxFlexFill fxLayoutAlign="center center">
-            50%
+            100%
         </mat-card>
     </div>
 </div>
 
-<div fxFlexFill [fxLayout]="'row wrap'" fxLayoutGap="20px grid">
+<div class="mb-20" fxFlex fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
+    <div fxFlex *ngFor="let i of [50, 50]">
+        <mat-card fxFlexFill fxLayoutAlign="center center">
+            {{i}}%
+        </mat-card>
+    </div>
+</div>
+
+<div class="mb-20" fxFlex fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
+    <div [fxFlex]="i" *ngFor="let i of [33.33, 33.33, 33.33]">
+        <mat-card fxFlexFill fxLayoutAlign="center center">
+            {{i}}%
+        </mat-card>
+    </div>
+</div>
+
+<div class="mb-20" fxFlex fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
+    <div [fxFlex]="i" *ngFor="let i of [25, 25, 25, 25]">
+        <mat-card fxFlexFill fxLayoutAlign="center center">
+            {{i}}%
+        </mat-card>
+    </div>
+</div>
+
+<div class="mb-20" fxFlex fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
+    <div [fxFlex]="i" *ngFor="let i of [12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5]">
+        <mat-card fxFlexFill fxLayoutAlign="center center">
+            {{i}}%
+        </mat-card>
+    </div>
+</div>
+
+<div class="mb-20" fxFlex fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
+    <div [fxFlex]="15">
+        <mat-card fxFlexFill fxLayoutAlign="center center">
+            15%
+        </mat-card>
+    </div>
+    <div [fxFlex]="25">
+        <mat-card fxFlexFill fxLayoutAlign="center center">
+            25%
+        </mat-card>
+    </div>
+    <div [fxFlex]="60">
+        <mat-card fxFlexFill fxLayoutAlign="center center">
+            60%
+        </mat-card>
+    </div>
+</div>
+
+<!-- <div fxFlexFill [fxLayout]="'row wrap'" fxLayoutGap="20px grid">
     <div fxFlex="25">
         <mat-card fxFlexFill fxLayoutAlign="center center">
             A
@@ -47,4 +92,4 @@
             G
         </mat-card>
     </div>
-</div>
+</div> -->

@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {
     MatBottomSheetModule, MatButtonModule, MatCardModule, MatDialogModule, MatFormFieldModule,
@@ -43,7 +44,8 @@ import { ToolTipComponent } from './tool-tip/tool-tip.component';
         MatSliderModule,
         MatProgressBarModule,
         MatPaginatorModule,
-        MatIconModule
+        MatIconModule,
+        FlexLayoutModule
     ],
     declarations: [
         MaterialComponentsComponent,

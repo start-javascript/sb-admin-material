@@ -1,12 +1,12 @@
 @import '~@angular/material/theming';
 
-.icon-lg {
-    font-size: 40px;
-}
-
-.mat-card-header-text {
+:host /deep/ .mat-card-header-text {
     width: 100%;
     text-align: right;
+}
+
+.icon-lg {
+    font-size: 40px;
 }
 
 .mat-card {

@@ -1,96 +1,73 @@
-<mat-grid-list cols="2" [gutterSize]="'20px'" [rowHeight]="'300px'">
-    <mat-grid-tile>
+<div class="mb-20" fxLayout="row" fxLayout.lt-md="column" fxFlex fxLayoutGap="20px">
+    <div fxFlex>
         <mat-card>
             <mat-card-header>
                 <mat-card-title>Bar Chart</mat-card-title>
             </mat-card-header>
             <mat-card-content>
-                <canvas
-                    baseChart width="500" height="200"
-                    [datasets]="barChartData" [labels]="barChartLabels"
-                    [options]="barChartOptions" [legend]="barChartLegend"
-                    [chartType]="barChartType" (chartHover)="chartHovered($event)"
-                    (chartClick)="chartClicked($event)"
-                ></canvas>
+                <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend"
+                    [chartType]="barChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
             </mat-card-content>
         </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile>
+    </div>
+    <div fxFlex>
         <mat-card>
             <mat-card-header>
                 <mat-card-title>Doughnut Chart</mat-card-title>
             </mat-card-header>
             <mat-card-content>
-                <canvas
-                    baseChart width="500" height="200"
-                    [data]="doughnutChartData" [labels]="doughnutChartLabels"
-                    [chartType]="doughnutChartType" (chartHover)="chartHovered($event)"
-                    (chartClick)="chartClicked($event)"
-                ></canvas>
+                <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType" (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)"></canvas>
             </mat-card-content>
         </mat-card>
-    </mat-grid-tile>
-</mat-grid-list>
-
-<mat-grid-list cols="2" [gutterSize]="'20px'" [rowHeight]="'300px'">
-    <mat-grid-tile>
+    </div>
+</div>
+<div class="mb-20" fxLayout="row" fxLayout.lt-md="column" fxFlex fxLayoutGap="20px">
+    <div fxFlex>
         <mat-card>
             <mat-card-header>
                 <mat-card-title>Radar Chart</mat-card-title>
             </mat-card-header>
             <mat-card-content>
-                <canvas
-                    baseChart width="500" height="200" [datasets]="radarChartData" [labels]="radarChartLabels"
-                    [chartType]="radarChartType" (chartHover)="chartHovered($event)"
-                    (chartClick)="chartClicked($event)"
-                ></canvas>
+                <canvas baseChart width="500" height="200" [datasets]="radarChartData" [labels]="radarChartLabels" [chartType]="radarChartType"
+                    (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
             </mat-card-content>
         </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile>
+    </div>
+    <div fxFlex>
         <mat-card>
             <mat-card-header>
                 <mat-card-title>Pie Chart</mat-card-title>
             </mat-card-header>
             <mat-card-content>
-                <canvas
-                    baseChart width="500" height="200" [data]="pieChartData" [labels]="pieChartLabels"
-                    [chartType]="pieChartType" (chartHover)="chartHovered($event)"
-                    (chartClick)="chartClicked($event)"
-                ></canvas>
+                <canvas baseChart width="500" height="200" [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType" (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)"></canvas>
             </mat-card-content>
         </mat-card>
-    </mat-grid-tile>
-</mat-grid-list>
-
-<mat-grid-list cols="2" [gutterSize]="'20px'" [rowHeight]="'300px'">
-    <mat-grid-tile>
+    </div>
+</div>
+<div class="mb-20" fxLayout="row" fxLayout.lt-md="column" fxFlex fxLayoutGap="20px">
+    <div fxFlex>
         <mat-card>
             <mat-card-header>
                 <mat-card-title>Polar Area Chart</mat-card-title>
             </mat-card-header>
             <mat-card-content>
-                <canvas
-                    baseChart width="500" height="200" [data]="polarAreaChartData" [labels]="polarAreaChartLabels"
-                    [legend]="polarAreaLegend" [chartType]="polarAreaChartType"
-                    (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"
-                ></canvas>
+                <canvas baseChart width="500" height="200" [data]="polarAreaChartData" [labels]="polarAreaChartLabels" [legend]="polarAreaLegend"
+                    [chartType]="polarAreaChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
             </mat-card-content>
         </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile>
+    </div>
+    <div fxFlex>
         <mat-card>
             <mat-card-header>
                 <mat-card-title>Line Chart</mat-card-title>
             </mat-card-header>
             <mat-card-content>
-                <canvas
-                    baseChart width="500" height="200" [datasets]="lineChartData" [labels]="lineChartLabels"
-                    [options]="lineChartOptions" [colors]="lineChartColors" [legend]="lineChartLegend"
-                    [chartType]="lineChartType" (chartHover)="chartHovered($event)"
-                    (chartClick)="chartClicked($event)"
-                ></canvas>
+                <canvas baseChart width="500" height="200" [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions"
+                    [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="lineChartType" (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)"></canvas>
             </mat-card-content>
         </mat-card>
-    </mat-grid-tile>
-</mat-grid-list>
+    </div>
+</div>
