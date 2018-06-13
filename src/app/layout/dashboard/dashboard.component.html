@@ -38,72 +38,25 @@
     </div>
 </div>
 
-<div fxLayout="row" fxLayout.lt-md="column" fxFlex fxLayoutGap="20px" style="margin-top: 50px">
-    <div fxFlex>
+<div class="mb-20" fxLayout="row" fxLayout.lt-md="column" fxFlex fxLayoutGap="20px">
+    <div fxFlex *ngFor="let item of places">
         <mat-card>
-            <img mat-card-image src="assets/images/card-1.jpg">
+            <img mat-card-image [src]="item.imgSrc">
             <mat-card-header style="justify-content: center">
                 <mat-card-title>
-                    <h3 style="margin: 0">Cozy 5 Stars Apartment</h3>
+                    <h3 class="m-0">{{item.place}}</h3>
                 </mat-card-title>
             </mat-card-header>
             <mat-card-content>
                 <p>
-                    The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main
-                    night life in Barcelona.
+                    {{item.description}}
                 </p>
             </mat-card-content>
 
             <mat-card-actions>
-                <button mat-button>$899/night</button>
+                <button mat-button>{{item.charge}}</button>
                 <button mat-button>
-                    <mat-icon class="nav-icon">location_on</mat-icon> Barcelona, Spain
-                </button>
-            </mat-card-actions>
-        </mat-card>
-    </div>
-    <div fxFlex>
-        <mat-card>
-            <img mat-card-image src="assets/images/card-2.jpg">
-            <mat-card-header style="justify-content: center">
-                <mat-card-title>
-                    <h3 style="margin: 0">Office Studio</h3>
-                </mat-card-title>
-            </mat-card-header>
-            <mat-card-content>
-                <p>
-                    The place is close to Metro Station and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the night
-                    life in London, UK.
-                </p>
-            </mat-card-content>
-
-            <mat-card-actions>
-                <button mat-button>$1.119/night</button>
-                <button mat-button>
-                    <mat-icon class="nav-icon">location_on</mat-icon> London, UK
-                </button>
-            </mat-card-actions>
-        </mat-card>
-    </div>
-    <div fxFlex>
-        <mat-card>
-            <img mat-card-image src="assets/images/card-3.jpg">
-            <mat-card-header style="justify-content: center">
-                <mat-card-title>
-                    <h3 style="margin: 0">Beautiful Castle</h3>
-                </mat-card-title>
-            </mat-card-header>
-            <mat-card-content>
-                <p>
-                    The place is close to Metro Station and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night
-                    life in Milan.
-                </p>
-            </mat-card-content>
-
-            <mat-card-actions>
-                <button mat-button>$459/night</button>
-                <button mat-button>
-                    <mat-icon class="nav-icon">location_on</mat-icon> Milan, Italy
+                    <mat-icon class="nav-icon">location_on</mat-icon> {{item.location}}
                 </button>
             </mat-card-actions>
         </mat-card>
