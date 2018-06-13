@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Fontil Sans';
+    src: url('../assets/fonts/FontinSans/Fontin_Sans_R.otf') format('opentype');
+}
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~@angular/material/theming';
+
+$custom-typography: mat-typography-config(
+    $font-family: 'Fontil Sans, monospace',
+    $headline: mat-typography-level(32px, 48px, 700),
+    $body-1: mat-typography-level(16px, 24px, 500)
+);
+@include angular-material-typography($custom-typography);

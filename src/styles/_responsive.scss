@@ -1,0 +1,13 @@
+@media screen and (max-width: 992px) {
+    .main-container {
+        left: 0px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .push-right {
+        #sidebar {
+            left: 0 !important;
+        }
+    }
+}
