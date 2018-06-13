@@ -3,11 +3,17 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    position: relative;
     .content {
         z-index: 1;
         display: flex;
         align-items: center;
         justify-content: center;
+        .app-name {
+            margin-top: 0px;
+            padding-bottom: 10px;
+            font-size: 32px;
+        }
         .login-form {
             padding: 40px;
             background: #fff;
@@ -38,7 +44,9 @@
         right: 0;
     }
 }
-
+.text-center {
+    text-align: center;
+}
 .w-100 {
     width: 100%;
 }
