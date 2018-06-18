@@ -18,6 +18,29 @@
         }
     }
 }
+.nested-menu {
+    .nested {
+        list-style-type: none;
+    }
+    .submenu {
+        display: none;
+        height: 0;
+    }
+    & .expand {
+        &.submenu {
+            display: block;
+            list-style-type: none;
+            height: auto;
+            margin: 0;
+            li {
+                a {
+                    padding: 10px;
+                    display: block;
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 992px) {
     #sidebar {
         left: -250px;
