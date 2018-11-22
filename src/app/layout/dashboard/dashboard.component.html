@@ -1,4 +1,4 @@
-<div class="mb-20" fxLayout="row" fxLayout.lt-md="column" fxFlex fxLayoutGap="20px">
+<div class="mb-20" fxLayout="row" fxLayout.lt-md="column" fxflex=""fxLayoutGap="20px">
     <div fxFlex>
         <app-stat [bgClass]="'danger'" [icon]="'dashboard'" [count]="13" [label]="'New Tickets!'"></app-stat>
     </div>
@@ -38,8 +38,8 @@
     </div>
 </div>
 
-<div class="mb-20" fxLayout="row" fxLayout.lt-md="column" fxFlex fxLayoutGap="20px">
-    <div fxFlex *ngFor="let item of places">
+<div class="mb-20" fxLayout="row" fxLayout.lt-md="column" fxflex=""fxLayoutGap="20px">
+    <div fxflex=""*ngFor="let item of places">
         <mat-card>
             <img mat-card-image [src]="item.imgSrc">
             <mat-card-header style="justify-content: center">
