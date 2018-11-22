@@ -45,7 +45,7 @@ import { ToolTipComponent } from './tool-tip/tool-tip.component';
         MatProgressBarModule,
         MatPaginatorModule,
         MatIconModule,
-        FlexLayoutModule
+        FlexLayoutModule.withConfig({addFlexToParent: false})
     ],
     declarations: [
         MaterialComponentsComponent,

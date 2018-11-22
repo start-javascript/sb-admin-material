@@ -13,7 +13,7 @@ import { LoginComponent } from './login.component';
         MatInputModule,
         MatCheckboxModule,
         MatButtonModule,
-        FlexLayoutModule
+        FlexLayoutModule.withConfig({addFlexToParent: false})
     ],
     declarations: [LoginComponent]
 })

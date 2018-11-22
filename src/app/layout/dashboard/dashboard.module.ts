@@ -15,11 +15,11 @@ import { DashboardComponent } from './dashboard.component';
         MatGridListModule,
         StatModule,
         MatCardModule,
-        FlexLayoutModule,
         MatCardModule,
         MatTableModule,
         MatButtonModule,
-        MatIconModule
+        MatIconModule,
+        FlexLayoutModule.withConfig({addFlexToParent: false})
     ],
     declarations: [DashboardComponent]
 })

@@ -16,7 +16,7 @@ import { ChartsComponent } from './charts.component';
         Ng2Charts,
         MatCardModule,
         MatGridListModule,
-        FlexLayoutModule
+        FlexLayoutModule.withConfig({addFlexToParent: false})
     ],
     declarations: [ChartsComponent]
 })
