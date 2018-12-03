@@ -20,7 +20,6 @@ import { SliderComponent } from './slider/slider.component';
         CommonModule,
         FormsRoutingModule,
         MatAutocompleteModule,
-        FlexLayoutModule,
         FormModule,
         ReactiveFormsModule,
         MatSlideToggleModule,
@@ -33,7 +32,8 @@ import { SliderComponent } from './slider/slider.component';
         MatNativeDateModule,
         MatFormFieldModule,
         MatSelectModule,
-        MatSliderModule
+        MatSliderModule,
+        FlexLayoutModule.withConfig({addFlexToParent: false})
     ],
     declarations: [
         FormsComponent,

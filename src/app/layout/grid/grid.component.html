@@ -1,4 +1,4 @@
-<div class="mb-20" fxflex=""fxLayout="row" fxLayout.lt-md="column">
+<div class="mb-20" fxFlex fxLayout="row" fxLayout.lt-md="column">
     <div fxFlex>
         <mat-card fxFlexFill fxLayoutAlign="center center">
             100%
@@ -6,15 +6,15 @@
     </div>
 </div>
 
-<div class="mb-20" fxflex=""fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
-    <div fxflex=""*ngFor="let i of [50, 50]">
+<div class="mb-20" fxFlex fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
+    <div fxFlex *ngFor="let i of [50, 50]">
         <mat-card fxFlexFill fxLayoutAlign="center center">
             {{i}}%
         </mat-card>
     </div>
 </div>
 
-<div class="mb-20" fxflex=""fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
+<div class="mb-20" fxFlex fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
     <div [fxFlex]="i" *ngFor="let i of [33.33, 33.33, 33.33]">
         <mat-card fxFlexFill fxLayoutAlign="center center">
             {{i}}%
@@ -22,7 +22,7 @@
     </div>
 </div>
 
-<div class="mb-20" fxflex=""fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
+<div class="mb-20" fxFlex fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
     <div [fxFlex]="i" *ngFor="let i of [25, 25, 25, 25]">
         <mat-card fxFlexFill fxLayoutAlign="center center">
             {{i}}%
@@ -30,7 +30,7 @@
     </div>
 </div>
 
-<div class="mb-20" fxflex=""fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
+<div class="mb-20" fxFlex fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
     <div [fxFlex]="i" *ngFor="let i of [12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5]">
         <mat-card fxFlexFill fxLayoutAlign="center center">
             {{i}}%
@@ -38,7 +38,7 @@
     </div>
 </div>
 
-<div class="mb-20" fxflex=""fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
+<div class="mb-20" fxFlex fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
     <div [fxFlex]="15">
         <mat-card fxFlexFill fxLayoutAlign="center center">
             15%

@@ -6,7 +6,12 @@ import { GridRoutingModule } from './grid-routing.module';
 import { GridComponent } from './grid.component';
 
 @NgModule({
-    imports: [CommonModule, GridRoutingModule, FlexLayoutModule, MatCardModule],
+    imports: [
+        CommonModule,
+        GridRoutingModule,
+        MatCardModule,
+        FlexLayoutModule.withConfig({addFlexToParent: false})
+    ],
     declarations: [GridComponent]
 })
 export class GridModule {}
