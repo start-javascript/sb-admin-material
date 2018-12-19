@@ -1,0 +1,21 @@
+<h1>Please select your criteria</h1>
+
+<mat-card>
+    <mat-card-content>
+        <mat-form-field>
+            <input matInput placeholder="Please select category">
+        </mat-form-field>
+        <p></p>
+        <mat-form-field>
+            <input matInput placeholder="Please select subcategory">
+        </mat-form-field>
+        <p></p>
+        <mat-form-field>
+            <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <button mat-button>Click me!</button>
+    </mat-card-content>
+</mat-card>
+

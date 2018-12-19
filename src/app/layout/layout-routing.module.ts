@@ -17,6 +17,10 @@ const routes: Routes = [
                 loadChildren: './dashboard/dashboard.module#DashboardModule'
             },
             {
+                path: 'createset',
+                loadChildren: './create-set/create-set.module#CreateSetModule'
+            },
+            {
                 path: 'charts',
                 loadChildren: './charts/charts.module#ChartsModule'
             },
