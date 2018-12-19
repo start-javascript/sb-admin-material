@@ -38,6 +38,10 @@ const routes: Routes = [
                 loadChildren: './tables/tables.module#TablesModule'
             },
             {
+                path: 'lastactivity',
+                loadChildren: './last-activity/last-activity.module#LastActivityModule'
+            },
+            {
                 path: 'blank-page',
                 loadChildren: './blank-page/blank-page.module#BlankPageModule'
             }
