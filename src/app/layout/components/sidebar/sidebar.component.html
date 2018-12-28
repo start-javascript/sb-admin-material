@@ -4,16 +4,19 @@
             <mat-icon class="sidenav-icon">dashboard</mat-icon> {{ 'Dashboard' | translate }}
         </a>
         <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/createset']">
-            <mat-icon class="sidenav-icon">input</mat-icon> {{ 'Create Set' | translate }}
+            <mat-icon class="sidenav-icon">input</mat-icon> {{ 'Create Quiz' | translate }}
         </a>
         <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/charts']">
             <mat-icon class="sidenav-icon">bar_chart</mat-icon> {{ 'Charts' | translate }}
         </a>
-        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/tables']">
-            <mat-icon class="sidenav-icon">table_chart</mat-icon> {{ 'Tables' | translate }}
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/lastactivity']">
+            <mat-icon class="sidenav-icon">table_chart</mat-icon> {{ 'History' | translate }}
         </a>
         <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/lastactivity']">
-            <mat-icon class="sidenav-icon">table_chart</mat-icon> {{ 'Last Activity' | translate }}
+            <mat-icon class="sidenav-icon">table_chart</mat-icon> {{ 'Membership' | translate }}
+        </a>
+        <!-- <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/tables']">
+            <mat-icon class="sidenav-icon">table_chart</mat-icon> {{ 'Tables' | translate }}
         </a>
         <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/forms']">
             <mat-icon class="sidenav-icon">input</mat-icon> {{ 'Forms' | translate }}
@@ -26,7 +29,7 @@
         </a>
         <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/blank-page']">
             <mat-icon class="sidenav-icon">insert_drive_file</mat-icon> {{ 'Blank Page' | translate }}
-        </a>
+        </a> -->
         <div class="nested-menu">
             <a mat-list-item (click)="addExpandClass('pages')">
                 <mat-icon class="sidenav-icon">add</mat-icon> {{ 'Menu' | translate }}
