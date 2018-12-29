@@ -1,21 +1,40 @@
 <h1>Please select your criteria</h1>
+<mat-horizontal-stepper [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+        <form [formGroup]="firstFormGroup">
+            <ng-template matStepLabel>Choose your category</ng-template>
+            <mat-form-field>
+                <input matInput placeholder="Math, Science, English " formControlName="firstCtrl" required>
+            </mat-form-field>
+            <div>
+                <button mat-button matStepperNext primary>Next</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup">
+        <form [formGroup]="secondFormGroup">
+            <ng-template matStepLabel>Choose your subcategory</ng-template>
+            <mat-form-field>
+                <input matInput placeholder="Algebra, Geometry" formControlName="secondCtrl" required>
+            </mat-form-field>
+            <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button matStepperNext color="primary">Next</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step>
+        <ng-template matStepLabel>Done</ng-template>
+        You are now done.
+        <div>
+            <button mat-button matStepperPrevious>Back</button>           
+            <button mat-button (click)="stepper.reset()">Reset</button>
+            <button mat-button>Done</button>
+        </div>
+    </mat-step>
+</mat-horizontal-stepper>
 
-<mat-card>
-    <mat-card-content>
-        <mat-form-field>
-            <input matInput placeholder="Please select category">
-        </mat-form-field>
-        <p></p>
-        <mat-form-field>
-            <input matInput placeholder="Please select subcategory">
-        </mat-form-field>
-        <p></p>
-        <mat-form-field>
-            <input matInput [matDatepicker]="picker" placeholder="Choose a date">
-            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-            <mat-datepicker #picker></mat-datepicker>
-        </mat-form-field>
-        <button mat-button>Click me!</button>
-    </mat-card-content>
-</mat-card>
 
+<!-- Copyright 2018 Google Inc. All Rights Reserved.
+      Use of this source code is governed by an MIT-style license that
+      can be found in the LICENSE file at http://angular.io/license -->
