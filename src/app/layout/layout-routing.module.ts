@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { LayoutComponent } from './layout.component';
+import { Screen1Component } from './screen1/screen1.component';
+import { Screen2Component } from './screen2/screen2.component';
 
 const routes: Routes = [
     {
@@ -17,29 +19,12 @@ const routes: Routes = [
                 loadChildren: './dashboard/dashboard.module#DashboardModule'
             },
             {
-                path: 'charts',
-                loadChildren: './charts/charts.module#ChartsModule'
+                path: 'screen1',
+                loadChildren: './screen1/screen1.module#Screen1Module'
             },
             {
-                path: 'components',
-                loadChildren:
-                    './material-components/material-components.module#MaterialComponentsModule'
-            },
-            {
-                path: 'forms',
-                loadChildren: './forms/forms.module#FormsModule'
-            },
-            {
-                path: 'grid',
-                loadChildren: './grid/grid.module#GridModule'
-            },
-            {
-                path: 'tables',
-                loadChildren: './tables/tables.module#TablesModule'
-            },
-            {
-                path: 'blank-page',
-                loadChildren: './blank-page/blank-page.module#BlankPageModule'
+                path: 'screen2',
+                component: Screen2Component
             }
         ]
     }
@@ -47,6 +32,6 @@ const routes: Routes = [
 
 @NgModule({
     imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule]
+    exports: [RouterModule],
 })
 export class LayoutRoutingModule {}
