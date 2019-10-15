@@ -25,6 +25,30 @@ const routes: Routes = [
             {
                 path: 'screen2',
                 component: Screen2Component
+            },
+            {
+                path: 'charts',
+                loadChildren: './charts/charts.module#ChartsModule'
+            },
+            {
+                path: 'forms',
+                loadChildren: './forms/forms.module#FormsModule'
+            },
+            {
+                path: 'grid',
+                loadChildren: './grid/grid.module#GridModule'
+            },
+            {
+                path: 'blank-page',
+                loadChildren: './blank-page/blank-page.module#BlankPageModule'
+            },
+            {
+                path: 'tables',
+                loadChildren: './tables/tables.module#TablesModule'
+            },
+            {
+                path: 'material-components',
+                loadChildren: './material-components/material-components.module#MaterialComponentsModule'
             }
         ]
     }

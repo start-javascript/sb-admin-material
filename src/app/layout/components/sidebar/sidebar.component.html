@@ -9,5 +9,43 @@
         <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/screen2']">
             <mat-icon class="sidenav-icon">people</mat-icon> {{ 'Screen2' | translate }}
         </a>
+
+        <div class="nested-menu">
+            <a mat-list-item (click)="addExpandClass('pages')">
+                <mat-icon class="sidenav-icon">add</mat-icon> {{ 'Development' | translate }}
+            </a>
+            <ul class="nested submenu" [class.expand]="showMenu === 'pages'">
+                <li>
+                  <a [routerLinkActive]="'active'" [routerLink]="['/charts']">
+                    <span> {{ 'Charts' | translate }} </span>
+                  </a>
+                </li>
+                <li>
+                  <a [routerLinkActive]="'active'" [routerLink]="['/forms']">
+                    <span> {{ 'Forms' | translate }} </span>
+                  </a>
+                </li>
+                <li>
+                  <a [routerLinkActive]="'active'" [routerLink]="['/grid']">
+                    <span> {{ 'Grid' | translate }} </span>
+                  </a>
+                </li>
+                <li>
+                  <a [routerLinkActive]="'active'" [routerLink]="['/blank-page']">
+                    <span> {{ 'Blank Page' | translate }} </span>
+                  </a>
+                </li>
+                <li>
+                  <a [routerLinkActive]="'active'" [routerLink]="['/tables']">
+                    <span> {{ 'Tables' | translate }} </span>
+                  </a>
+                </li>
+                <li>
+                  <a [routerLinkActive]="'active'" [routerLink]="['/material-components']">
+                    <span> {{ 'Material Components' | translate }} </span>
+                  </a>
+                </li>
+            </ul>
+        </div>
     </mat-nav-list>
 </div>

@@ -1,0 +1,62 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Progress Bar</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <div class="mb-20">
+            <label>
+                <b>Color: </b>
+            </label>
+            <mat-radio-group [(ngModel)]="color">
+                <mat-radio-button value="primary">
+                    Primary
+                </mat-radio-button>
+                <mat-radio-button value="accent">
+                    Accent
+                </mat-radio-button>
+                <mat-radio-button value="warn">
+                    Warn
+                </mat-radio-button>
+            </mat-radio-group>
+        </div>
+
+        <div>
+            <label>
+                <b>Mode: </b>
+            </label>
+            <mat-radio-group [(ngModel)]="mode">
+                <mat-radio-button value="determinate">
+                    Determinate
+                </mat-radio-button>
+                <mat-radio-button value="indeterminate">
+                    Indeterminate
+                </mat-radio-button>
+                <mat-radio-button value="buffer">
+                    Buffer
+                </mat-radio-button>
+                <mat-radio-button value="query">
+                    Query
+                </mat-radio-button>
+            </mat-radio-group>
+        </div>
+
+        <ng-container *ngIf="mode == 'determinate' || mode == 'buffer'">
+            <label class="example-margin">Progress:</label>
+            <mat-slider class="example-margin" [(ngModel)]="value"></mat-slider>
+        </ng-container>
+        <ng-container *ngIf="mode == 'buffer'">
+            <label class="example-margin">Buffer:</label>
+            <mat-slider class="example-margin" [(ngModel)]="bufferValue"></mat-slider>
+        </ng-container>
+    </mat-card-content>
+</mat-card>
+
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Result</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-progress-bar class="example-margin" [color]="color" [mode]="mode" [value]="value" [bufferValue]="bufferValue">
+        </mat-progress-bar>
+    </mat-card-content>
+</mat-card>
