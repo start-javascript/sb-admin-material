@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Dialog</mat-card-title>
+    </mat-card-header>
+    <ol>
+        <li>
+            <mat-form-field>
+                <input matInput [(ngModel)]="name" placeholder="What's your name?">
+            </mat-form-field>
+        </li>
+        <li>
+            <button mat-raised-button (click)="openDialog()">Pick one</button>
+        </li>
+        <li *ngIf="animal">
+            You chose:
+            <i>{{animal}}</i>
+        </li>
+    </ol>
+</mat-card>

@@ -27,5 +27,3 @@ $sb-admin8-theme: mat-light-theme($sb-admin8-primary, $sb-admin8-accent, $sb-adm
 @include angular-material-theme($sb-admin8-theme);
 
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
