@@ -1,8 +1,19 @@
 @import '~@angular/material/theming';
 
-:host /deep/ .mat-card-header-text {
+
+:host .mat-card-header-text {
     width: 100%;
     text-align: right;
+    margin: 0px;
+}
+
+.main-container {
+    position: absolute;
+    top: 64px;
+    left: 250px;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
 }
 
 .icon-lg {
