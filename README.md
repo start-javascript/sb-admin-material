@@ -6,7 +6,7 @@ This project is a port of the famous Free Admin Bootstrap Theme [SB Admin v1.0](
 
 ## [Demo](http://rawgit.com/start-javascript/sb-admin-material/master/dist/)
 
-## Donation
+### Donation
 If this project help you reduce time to develop, you can give me a cup of tea :) 
 
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/nitinkrmr)
