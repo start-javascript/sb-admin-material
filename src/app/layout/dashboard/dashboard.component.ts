@@ -9,13 +9,13 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-    { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
-    { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
-    { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
-    { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
-    { position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },
-    { position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C' },
-    { position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N' }
+    { position: 1, name: 'Test1', weight: 80.76, symbol: 'A+' },
+    { position: 2, name: 'Test2', weight: 70.67, symbol: 'A' },
+    { position: 3, name: 'Test3', weight: 60.45, symbol: 'B+' },
+    { position: 4, name: 'Test4', weight: 50.34, symbol: 'B' },
+    { position: 5, name: 'Test5', weight: 30.90, symbol: 'F' },
+    { position: 6, name: 'Test6', weight: 56.80, symbol: 'B' },
+    { position: 7, name: 'Test7', weight: 65.78, symbol: 'A' }
 ];
 
 @Component({

@@ -1,0 +1,40 @@
+<h1>Please select your criteria</h1>
+<mat-horizontal-stepper [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+        <form [formGroup]="firstFormGroup">
+            <ng-template matStepLabel>Choose your category</ng-template>
+            <mat-form-field>
+                <input matInput placeholder="Math, Science, English " formControlName="firstCtrl" required>
+            </mat-form-field>
+            <div>
+                <button mat-button matStepperNext primary>Next</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup">
+        <form [formGroup]="secondFormGroup">
+            <ng-template matStepLabel>Choose your subcategory</ng-template>
+            <mat-form-field>
+                <input matInput placeholder="Algebra, Geometry" formControlName="secondCtrl" required>
+            </mat-form-field>
+            <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button matStepperNext color="primary">Next</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step>
+        <ng-template matStepLabel>Done</ng-template>
+        You are now done.
+        <div>
+            <button mat-button matStepperPrevious>Back</button>           
+            <button mat-button (click)="stepper.reset()">Reset</button>
+            <button mat-button>Preview</button>
+        </div>
+    </mat-step>
+</mat-horizontal-stepper>
+
+
+<!-- Copyright 2018 Google Inc. All Rights Reserved.
+      Use of this source code is governed by an MIT-style license that
+      can be found in the LICENSE file at http://angular.io/license -->
