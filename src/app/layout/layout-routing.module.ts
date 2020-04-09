@@ -16,11 +16,11 @@ const routes: Routes = [
             },
             {
                 path: 'dashboard',
-                loadChildren: './dashboard/dashboard.module#DashboardModule'
+                loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
             },
             {
                 path: 'screen1',
-                loadChildren: './screen1/screen1.module#Screen1Module'
+                loadChildren: () => import('./screen1/screen1.module').then(m => m.Screen1Module)
             },
             {
                 path: 'screen2',
