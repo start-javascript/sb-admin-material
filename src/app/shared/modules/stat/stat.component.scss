@@ -1,6 +1,6 @@
 @import '~@angular/material/theming';
 
-:host /deep/ .mat-card-header-text {
+:host ::ng-deep .mat-card-header-text {
     width: 100%;
     text-align: right;
 }
