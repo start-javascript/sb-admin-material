@@ -4,7 +4,7 @@ Simple Dashboard Admin App built using Angular 7 and Material 2.
 
 This project is a port of the famous Free Admin Bootstrap Theme [SB Admin v1.0](http://startbootstrap.com/template-overviews/sb-admin-2/) to Angular6 Theme.
 
-## [Demo](http://rawgit.com/start-javascript/sb-admin-material/master/dist/)
+## [Demo](https://start-javascript.github.io/sb-admin-material)
 
 ### Donation
 If this project help you reduce time to develop, you can give me a cup of tea :) 
