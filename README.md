@@ -1,6 +1,6 @@
-# SB Admin rewritten in Angular7 and Material2
+# SB Admin rewritten in Angular9 and Material2
 
-Simple Dashboard Admin App built using Angular 7 and Material 2.
+Simple Dashboard Admin App built using Angular 9 and Material 2.
 
 This project is a port of the famous Free Admin Bootstrap Theme [SB Admin v1.0](http://startbootstrap.com/template-overviews/sb-admin-2/) to Angular6 Theme.
 
