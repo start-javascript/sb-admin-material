@@ -9,7 +9,7 @@ import { Screen1RoutingModule } from './screen1-routing.module';
   imports: [
     CommonModule,
     Screen1RoutingModule,
-    FlexLayoutModule.withConfig({addFlexToParent: false})
+    FlexLayoutModule.withConfig({ addFlexToParent: false })
   ]
 })
 export class Screen1Module { }
